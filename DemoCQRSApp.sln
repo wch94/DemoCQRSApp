@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.14.36105.17
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoCQRSApp.Api", "DemoCQRSApp\DemoCQRSApp.Api.csproj", "{5A19BCD8-52AE-4390-8B15-67D023FA5D2B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoCQRSApp.Api", "DemoCQRSApp.Api\DemoCQRSApp.Api.csproj", "{5A19BCD8-52AE-4390-8B15-67D023FA5D2B}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoCQRSApp.Application", "DemoCQRSApp.Application\DemoCQRSApp.Application.csproj", "{C9DB9902-13B2-4175-BB66-5FD5A088B8A0}"
 EndProject
