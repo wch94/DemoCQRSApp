@@ -1,8 +1,8 @@
 using Azure.Identity;
 using Api;
+using Application.Interfaces;
 using Application.Services;
 using Application.Validators;
-using Domain.Interfaces;
 using Infrastructure.Persistence;
 using FastEndpoints;
 using FluentValidation;
