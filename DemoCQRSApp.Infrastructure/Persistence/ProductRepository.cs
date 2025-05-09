@@ -1,5 +1,6 @@
 ﻿using DemoCQRSApp.Domain.Entities;
 using DemoCQRSApp.Domain.Interfaces;
+using Microsoft.EntityFrameworkCore;
 
 namespace DemoCQRSApp.Infrastructure.Persistence;
 
@@ -12,18 +13,31 @@ public class ProductRepository : IProductRepository
         _dbContext = dbContext;
     }
 
-    public async Task<Product> GetByIdAsync(int id)
+    public async Task<List<Product>> GetAllAsync()
     {
-        var product = await _dbContext.Products.FindAsync(id);
-        if (product == null)
-            throw new KeyNotFoundException($"Product with ID {id} not found.");
+        return await _dbContext.Products.ToListAsync();
+    }
 
-        return product;
+    public async Task<Product?> GetByIdAsync(int id)
+    {
+        return await _dbContext.Products.FindAsync(id);
     }
 
     public async Task AddAsync(Product product)
     {
         _dbContext.Products.Add(product);
+        await _dbContext.SaveChangesAsync();
+    }
+
+    public async Task UpdateAsync(Product product)
+    {
+        _dbContext.Products.Update(product);
+        await _dbContext.SaveChangesAsync();
+    }
+
+    public async Task DeleteAsync(Product product)
+    {
+        _dbContext.Products.Remove(product);
         await _dbContext.SaveChangesAsync();
     }
 }

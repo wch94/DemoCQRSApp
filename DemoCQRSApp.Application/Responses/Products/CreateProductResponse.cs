@@ -1,4 +1,4 @@
-﻿namespace DemoCQRSApp.Api.Endpoints.Products.CreateProduct;
+﻿namespace DemoCQRSApp.Application.Responses.Products;
 
 public class CreateProductResponse
 {

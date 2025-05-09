@@ -1,7 +1,9 @@
-﻿using DemoCQRSApp.Application.Services;
+﻿using DemoCQRSApp.Application.Requests.Products;
+using DemoCQRSApp.Application.Responses.Products;
+using DemoCQRSApp.Application.Services;
 using FastEndpoints;
 
-namespace DemoCQRSApp.Api.Endpoints.Products.CreateProduct;
+namespace DemoCQRSApp.Api.Endpoints.Products;
 
 public class CreateProductEndpoint : Endpoint<CreateProductRequest, CreateProductResponse>
 {
@@ -14,13 +16,12 @@ public class CreateProductEndpoint : Endpoint<CreateProductRequest, CreateProduc
 
     public override void Configure()
     {
-        Post("/v1/api/products");
-        AllowAnonymous();
+        Post("/products");
     }
 
     public override async Task HandleAsync(CreateProductRequest req, CancellationToken ct)
     {
-        var id = await _service.CreateProduct(req.Name);
+        var id = await _service.CreateProductAsync(req.Name);
         await SendAsync(new CreateProductResponse { Id = id });
     }
 }
