@@ -1,7 +1,7 @@
-﻿using DemoCQRSApp.Domain.Entities;
+﻿using Domain.Entities;
 using Microsoft.EntityFrameworkCore;
 
-namespace DemoCQRSApp.Infrastructure.Persistence;
+namespace Infrastructure.Persistence;
 
 public class AppDbContext : DbContext
 {

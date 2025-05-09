@@ -1,8 +1,8 @@
-﻿using DemoCQRSApp.Domain.Entities;
-using DemoCQRSApp.Domain.Interfaces;
+﻿using Domain.Entities;
+using Domain.Interfaces;
 using Microsoft.EntityFrameworkCore;
 
-namespace DemoCQRSApp.Infrastructure.Persistence;
+namespace Infrastructure.Persistence;
 
 public class ProductRepository : IProductRepository
 {

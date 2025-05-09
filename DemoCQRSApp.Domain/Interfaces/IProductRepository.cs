@@ -1,6 +1,6 @@
-﻿using DemoCQRSApp.Domain.Entities;
+﻿using Domain.Entities;
 
-namespace DemoCQRSApp.Domain.Interfaces;
+namespace Domain.Interfaces;
 
 public interface IProductRepository
 {

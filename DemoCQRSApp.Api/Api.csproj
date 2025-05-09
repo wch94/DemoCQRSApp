@@ -19,8 +19,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DemoCQRSApp.Application\DemoCQRSApp.Application.csproj" />
-    <ProjectReference Include="..\DemoCQRSApp.Infrastructure\DemoCQRSApp.Infrastructure.csproj" />
+    <ProjectReference Include="..\DemoCQRSApp.Application\Application.csproj" />
+    <ProjectReference Include="..\DemoCQRSApp.Infrastructure\Infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

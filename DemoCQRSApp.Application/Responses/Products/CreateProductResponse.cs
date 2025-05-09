@@ -1,4 +1,4 @@
-﻿namespace DemoCQRSApp.Application.Responses.Products;
+﻿namespace Application.Responses.Products;
 
 public class CreateProductResponse
 {

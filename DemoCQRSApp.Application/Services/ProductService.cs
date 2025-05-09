@@ -1,9 +1,9 @@
 ﻿using AutoMapper;
-using DemoCQRSApp.Application.DTOs;
-using DemoCQRSApp.Domain.Entities;
-using DemoCQRSApp.Domain.Interfaces;
+using Application.DTOs;
+using Domain.Entities;
+using Domain.Interfaces;
 
-namespace DemoCQRSApp.Application.Services;
+namespace Application.Services;
 
 public class ProductService
 {

@@ -12,7 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\DemoCQRSApp.Domain\DemoCQRSApp.Domain.csproj" />
+    <ProjectReference Include="..\DemoCQRSApp.Domain\Domain.csproj" />
   </ItemGroup>
 
 </Project>

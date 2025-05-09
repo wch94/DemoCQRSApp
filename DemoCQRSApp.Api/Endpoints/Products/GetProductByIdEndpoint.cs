@@ -1,8 +1,8 @@
-﻿using DemoCQRSApp.Application.DTOs;
-using DemoCQRSApp.Application.Services;
+﻿using Application.DTOs;
+using Application.Services;
 using FastEndpoints;
 
-namespace DemoCQRSApp.Api.Endpoints.Products;
+namespace Api.Endpoints.Products;
 
 public class GetProductByIdEndpoint : EndpointWithoutRequest<ProductDto>
 {

@@ -1,4 +1,4 @@
-﻿namespace DemoCQRSApp.Application.DTOs;
+﻿namespace Application.DTOs;
 
 public class ProductDto
 {

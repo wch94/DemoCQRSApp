@@ -1,8 +1,8 @@
 ﻿using AutoMapper;
-using DemoCQRSApp.Application.DTOs;
-using DemoCQRSApp.Domain.Entities;
+using Application.DTOs;
+using Domain.Entities;
 
-namespace DemoCQRSApp.Application.MappingProfiles;
+namespace Application.MappingProfiles;
 
 public class ProductProfile : Profile
 {

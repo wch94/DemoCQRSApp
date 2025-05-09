@@ -1,8 +1,8 @@
-﻿using DemoCQRSApp.Application.Responses.Products;
-using DemoCQRSApp.Application.Services;
+﻿using Application.Responses.Products;
+using Application.Services;
 using FastEndpoints;
 
-namespace DemoCQRSApp.Api.Endpoints.Products;
+namespace Api.Endpoints.Products;
 
 public class DeleteProductEndpoint : EndpointWithoutRequest<DeleteProductResponse>
 {

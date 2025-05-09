@@ -1,9 +1,9 @@
 using Azure.Identity;
-using DemoCQRSApp.Api;
-using DemoCQRSApp.Application.Services;
-using DemoCQRSApp.Application.Validators;
-using DemoCQRSApp.Domain.Interfaces;
-using DemoCQRSApp.Infrastructure.Persistence;
+using Api;
+using Application.Services;
+using Application.Validators;
+using Domain.Interfaces;
+using Infrastructure.Persistence;
 using FastEndpoints;
 using FluentValidation;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -84,7 +84,7 @@ builder.Services.AddDbContext<AppDbContext>(options =>
 // Dependency Injection
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<ProductService>();
-builder.Services.AddAutoMapper(typeof(DemoCQRSApp.Application.MappingProfiles.ProductProfile).Assembly);
+builder.Services.AddAutoMapper(typeof(Application.MappingProfiles.ProductProfile).Assembly);
 
 var app = builder.Build();
 

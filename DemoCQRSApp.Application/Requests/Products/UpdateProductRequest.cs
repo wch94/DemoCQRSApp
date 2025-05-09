@@ -1,4 +1,4 @@
-﻿namespace DemoCQRSApp.Application.Requests.Products;
+﻿namespace Application.Requests.Products;
 
 public class UpdateProductRequest
 {

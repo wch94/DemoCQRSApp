@@ -3,7 +3,7 @@ using Azure.Identity;
 using Microsoft.Data.SqlClient;
 using Microsoft.Extensions.Diagnostics.HealthChecks;
 
-namespace DemoCQRSApp.Api;
+namespace Api;
 
 public class AzureSqlManagedIdentityHealthCheck : IHealthCheck
 {

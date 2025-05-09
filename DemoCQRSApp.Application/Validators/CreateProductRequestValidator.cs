@@ -1,8 +1,8 @@
-﻿using DemoCQRSApp.Application.Requests.Products;
+﻿using Application.Requests.Products;
 using FastEndpoints;
 using FluentValidation;
 
-namespace DemoCQRSApp.Application.Validators;
+namespace Application.Validators;
 
 public class CreateProductRequestValidator : Validator<CreateProductRequest>
 {

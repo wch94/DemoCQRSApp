@@ -1,4 +1,4 @@
-﻿namespace DemoCQRSApp.Domain.Entities;
+﻿namespace Domain.Entities;
 
 public class Product
 {
